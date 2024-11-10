@@ -12,6 +12,14 @@ body {
   }
 }
 
+a{
+  @apply font-bold underline;
+}
+
+.navA{
+  @apply font-normal;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -86,43 +86,6 @@ const Page = () => {
             for PRs or issues please.)
           </li>
         </ul>
-        <br />
-        <hr />
-        <br />
-        <p>
-          <a className="aSelected" href="/" title="Current page">
-            Root
-          </a>{" "}
-          |
-          <a
-            href="https://github.com/aervnu/aervnu.moe"
-            title="Source code of this site"
-          >
-            {" "}
-            Source
-          </a>{" "}
-          |
-          <a href="/clock" title="Real time system clock">
-            {" "}
-            Clock
-          </a>{" "}
-          |
-          <a href="/devices" title="My devices">
-            {" "}
-            Devices
-          </a>{" "}
-          |
-          <a href="https://hastebin.aervnu.moe" title="All you can paste">
-            {" "}
-            Hastebin
-          </a>{" "}
-          |
-          <a href="/credits" title="Special thanks">
-            {" "}
-            Credits
-          </a>{" "}
-          |<span title="Coming soon."> Stay tuned.</span>
-        </p>
       </div>
     </main>
   );

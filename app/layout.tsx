@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
+import NavBar from "@/components/navbar";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,9 +24,42 @@ export const metadata: Metadata = {
 
 function Nav() {
   return (
-    <nav className="flex flex-row items-center justify-between w-full">
-      <p className="font-bold text-3xl">aervnu.moe</p>
-      <ThemeToggle />
+    <nav className="flex flex-col gap-4 justify-center items-center">
+      <div className="flex flex-row items-center justify-between w-full">
+        <Link className="font-bold text-3xl no-underline" href="/">
+          aervnu.moe
+        </Link>
+        <ThemeToggle />
+      </div>
+      <NavBar />
+      {/*<nav className="flex flex-row items-center justify-center gap-4">*/}
+      {/*  <a className="navA aSelected" href="/" title="Current page">*/}
+      {/*    Root*/}
+      {/*  </a>*/}
+      {/*  <a*/}
+      {/*    className="navA"*/}
+      {/*    href="https://github.com/aervnu/aervnu.moe"*/}
+      {/*    title="Source code of this site"*/}
+      {/*  >*/}
+      {/*    Source*/}
+      {/*  </a>*/}
+      {/*  <a className="navA" href="/clock" title="Real time system clock">*/}
+      {/*    Clock*/}
+      {/*  </a>*/}
+      {/*  <a className="navA" href="/devices" title="My devices">*/}
+      {/*    Devices*/}
+      {/*  </a>*/}
+      {/*  <a*/}
+      {/*    className="navA"*/}
+      {/*    href="https://hastebin.aervnu.moe"*/}
+      {/*    title="All you can paste"*/}
+      {/*  >*/}
+      {/*    Hastebin*/}
+      {/*  </a>*/}
+      {/*  <a className="navA" href="/credits" title="Special thanks">*/}
+      {/*    Credits*/}
+      {/*  </a>*/}
+      {/*</nav>*/}
     </nav>
   );
 }
