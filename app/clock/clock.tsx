@@ -13,8 +13,6 @@ function ISOClock() {
     return () => clearInterval(intervalId);
   }, []);
 
-  const date = new Date();
-
   const formattedDate = time.toLocaleDateString("en-US", {
     weekday: "long",
     month: "long",
