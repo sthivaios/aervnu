@@ -1,101 +1,131 @@
-import Image from "next/image";
-
-export default function Home() {
+import React from "react";
+const Page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
+    <main>
+      <div className="">
+        <h1>
+          <strong>Hello. No, this is my localhost. Not yours.</strong>
+        </h1>
+        <br />
+        <p>
+          It&apos;s me, Andy Nguyen. I live in Vietnam, last I checked I was 17.
+          I make things that either break or are not of much use. Plus insane
+          computers you probably wouldn&apos;t find in an average house.
+        </p>
+        <br />
+        <h1>
+          <strong>My hobbies</strong>
+        </h1>
+        <p>
+          <br />
+          Regular expressions. I don&apos;t know why, but to me it&apos;s just
+          really fun to craft and debug regex.
+          <br />
+          <br />
+          Hardware virtualization and (some) low level stuff. I did learn a bit
+          of x86 asm before but...you know what I mean. Not my priority either,
+          since it has limited practicality in production environments.
+          <br />
+          <br />
+          Photography. Insta is{" "}
+          <a href="https://www.instagram.com/aervnu.0/">aervnu.0</a>, go check
+          things out there.
+        </p>
+        <br />
+        <h1>
+          <strong>Things I wanna learn more in the future</strong>
+        </h1>
+        <p>
+          <br />
+          French and Japanese. Currently at DELF B1 for French, used to be at
+          JLPT N5 for Japanese but I ended up not using it much. I still need a
+          JLPT N2 after I finish university, as I&apos;m aiming for a masters
+          degree in Japan.
+          <br />
+          <br />
+          Networking. Lowkey my favorite when it comes to computing, even as
+          traumatizing as it is setting up my Oracle VPS. Heading to a telecom
+          corporation and aiming for a CCNA, but if need be I can attempt to get
+          the CCNP.
+          <br />
+          <br />
+          Some web-oriented (idek if I got this right) languages, like C#, Java
+          or JS. I have some experience with C# but haven&apos;t touched it for
+          like...months? Anyway, it seems like they&apos;re what the market is
+          targeting for now, so it kinda makes sense to learn them.
+        </p>
+        <br />
+        <h1>
+          <strong>Where to contact me</strong>
+        </h1>
+        <br />
+        <ul>
+          <li>
+            Discord:{" "}
+            <a href="https://discordapp.com/users/717255311060238387">
+              @aervnu
+            </a>
+            ; I also talk in the{" "}
+            <a href="discord.gg/microsoft">Microsoft Community server</a> a lot,
+            be sure to check it out.
           </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <li>
+            Signal:{" "}
+            <a href="https://signal.me/#eu/GzuQlUo5hWHjbngK7sIXAjiHMRavHLgoLA-K11mlXCSzI7DSszlI1ZbGpi8_suMp">
+              @aervnu.43
+            </a>
+          </li>
+          <li>
+            Twitter: <a href="https://x.com/aervnu">@aervnu</a>
+          </li>
+          <li>
+            Work email: <a href="mailto:andy@aervnu.moe">andy@aervnu.moe</a>
+          </li>
+          <li>
+            GitHub profile: <a href="https://github.com/aervnu">aervnu</a> (only
+            for PRs or issues please.)
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+        <p>
+          <a className="aSelected" href="/" title="Current page">
+            Root
+          </a>{" "}
+          |
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://github.com/aervnu/aervnu.moe"
+            title="Source code of this site"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            {" "}
+            Source
+          </a>{" "}
+          |
+          <a href="/clock" title="Real time system clock">
+            {" "}
+            Clock
+          </a>{" "}
+          |
+          <a href="/devices" title="My devices">
+            {" "}
+            Devices
+          </a>{" "}
+          |
+          <a href="https://hastebin.aervnu.moe" title="All you can paste">
+            {" "}
+            Hastebin
+          </a>{" "}
+          |
+          <a href="/credits" title="Special thanks">
+            {" "}
+            Credits
+          </a>{" "}
+          |<span title="Coming soon."> Stay tuned.</span>
+        </p>
+      </div>
+    </main>
   );
-}
+};
+
+export default Page;
